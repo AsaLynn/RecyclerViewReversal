@@ -20,7 +20,7 @@ public class EnterActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.btn_pull_down_load_more, R.id.btn_msg_top})
+    @OnClick({R.id.btn_pull_down_load_more, R.id.btn_msg_top, R.id.btn_msg_reverse})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.btn_pull_down_load_more:
@@ -28,6 +28,9 @@ public class EnterActivity extends AppCompatActivity {
                 break;
             case R.id.btn_msg_top:
                 startActivity(new Intent(this, TopItemActivity.class));
+                break;
+            case R.id.btn_msg_reverse:
+                startActivity(new Intent(this, StackFromEndActivity.class));
                 break;
         }
     }
