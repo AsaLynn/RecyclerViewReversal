@@ -25,4 +25,10 @@
         android:layout_height="wrap_content"
         android:text="翻转条目从上往下排列" />
 
+    <Button
+        android:id="@+id/btn_msgs_reverse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="逆向批量添加条目" />
+
 </LinearLayout>

@@ -32,6 +32,7 @@ public class StackFromEndActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stack_from_end);
         ButterKnife.bind(this);
+        rrl.setEnabled(false);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, true);
         layoutManager.setStackFromEnd(true);//列表再底部开始展示，反转后由上面开始展示
         layoutManager.setReverseLayout(true);//列表翻转
